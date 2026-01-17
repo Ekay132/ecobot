@@ -1,7 +1,7 @@
 import telebot
 from predict_image import get_class
 
-bot = telebot.TeleBot("8493081690:AAEJmodpY907ALL-OZw52A6qP0yjYJAw7Pg")
+bot = telebot.TeleBot("")
 
 GUIDE = {
     "batteries": "Батарейки: только в спецпункты (ВкусВилл, М.Видео). Нельзя в обычный мусор!",
@@ -47,3 +47,4 @@ def handle_photo(message):
     bot.send_message(message.chat.id, response)
 
 bot.polling()
+
